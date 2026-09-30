@@ -3,34 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marvel Brutalist Search</title>
-    <link rel="stylesheet" href="estilos.css">
+    <title>Buscador Brutalista de Héroes</title>
+    <link rel="stylesheet" href="../css/style_ej3.css">
 </head>
 <body>
 
-    <!-- Contenedor principal que manejará la alineación -->
     <main class="pantalla-completa">
         
-        <!-- Tarjeta brutalista del personaje -->
-        <article class="tarjeta-comic">
-            <header class="cabecera-buscador">
-                <input type="text" id="input-personaje" placeholder="EJ: SPIDER-MAN">
-                <button id="btn-buscar">BAM!</button>
-            </header>
-
-            <div id="resultado" class="oculto">
-                <div class="marco-foto">
-                    <img id="foto-personaje" src="" alt="Foto del personaje">
-                </div>
-                <h1 id="nombre-personaje" class="titulo-comic">--</h1>
-                <p id="desc-personaje" class="texto-comic">--</p>
-            </div>
+        <!-- contenedor para agrupar las dos tarjetas -->
+        <div class="contenedor-tarjetas">
             
-            <div id="mensaje-estado" class="texto-comic">Ingresa un héroe para buscar.</div>
-        </article>
+            <!-- t1: buscador y foto -->
+            <article class="tarjeta-comic tarjeta-foto">
+                <header class="cabecera-buscador">
+                    <input type="text" id="input-personaje" placeholder="EJ: BATMAN">
+                    <button id="btn-buscar">BAM!</button>
+                </header>
+
+                <div id="resultado-foto" class="oculto">
+                    <div class="marco-foto">
+                        <img id="foto-personaje" src="" alt="Foto del personaje">
+                    </div>
+                </div>
+                
+                <div id="mensaje-estado" class="texto-comic">Ingresa un héroe para buscar.</div>
+            </article>
+
+            <!-- t2: estadisticas, inicialmente oculta -->
+            <article id="resultado-info" class="tarjeta-comic tarjeta-info oculto">
+                <h1 id="nombre-personaje" class="titulo-comic">--</h1>
+                <h2 id="nombre-real" class="subtitulo-comic">--</h2>
+                
+                <hr class="linea-gruesa">
+                
+                <p id="desc-personaje" class="texto-comic">--</p>
+                <p id="stats-combate" class="texto-comic destacado">--</p>
+                
+                <hr class="linea-gruesa">
+                
+                <p id="afiliacion-personaje" class="texto-comic">--</p>
+            </article>
+
+        </div>
 
     </main>
 
-    <script src="app.js"></script>
+    <script src="../js/ej3.js"></script>
 </body>
 </html>
