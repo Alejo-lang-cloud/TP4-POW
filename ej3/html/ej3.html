@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Brutalist Search</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!-- Contenedor principal que manejará la alineación -->
+    <main class="pantalla-completa">
+        
+        <!-- Tarjeta brutalista del personaje -->
+        <article class="tarjeta-comic">
+            <header class="cabecera-buscador">
+                <input type="text" id="input-personaje" placeholder="EJ: SPIDER-MAN">
+                <button id="btn-buscar">BAM!</button>
+            </header>
+
+            <div id="resultado" class="oculto">
+                <div class="marco-foto">
+                    <img id="foto-personaje" src="" alt="Foto del personaje">
+                </div>
+                <h1 id="nombre-personaje" class="titulo-comic">--</h1>
+                <p id="desc-personaje" class="texto-comic">--</p>
+            </div>
+            
+            <div id="mensaje-estado" class="texto-comic">Ingresa un héroe para buscar.</div>
+        </article>
+
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
