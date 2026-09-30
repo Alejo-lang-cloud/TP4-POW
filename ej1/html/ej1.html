@@ -1,11 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PICO QUIZ</title>
+    <!-- Enlazamos nuestra hoja de estilos -->
+    <link rel="stylesheet" href="../css/style_ej1.css">
 </head>
 <body>
-    
+
+    <main class="contenedor-principal">
+        <header class="encabezado-brutal">
+            <h1>PICO QUIZ</h1>
+        </header>
+
+        <!-- área de juego -->
+        <section class="area-juego">
+            <p class="instruccion">Adivina el número secreto (entre 1 y 1000)</p>
+            
+            <div class="grupo-input">
+                <input type="number" id="input-numero" min="1" max="1000" placeholder="Ej: 500">
+                <button id="btn-adivinar" class="btn-brutal color-primario">ADIVINAR</button>
+            </div>
+
+            <!-- mensjaes: alto, bajo, adivinastes -->
+            <div id="mensaje-feedback" class="feedback oculto"></div>
+
+            <!-- estadísticas en tiempo real -->
+            <div class="estadisticas">
+                <div class="caja-stat">Intentos actuales: <br><strong id="intentos-actuales">0</strong></div>
+                <div class="caja-stat">Mejor puntaje: <br><strong id="mejor-puntaje">-</strong></div>
+                <div class="caja-stat">Partidas terminadas: <br><strong id="partidas-finalizadas">0</strong></div>
+                <div class="caja-stat">Promedio intentos: <br><strong id="promedio-intentos">-</strong></div>
+            </div>
+
+            <!-- botón de reinicio -->
+            <button id="btn-reiniciar" class="btn-brutal color-secundario">REINICIAR PARTIDA</button>
+        </section>
+    </main>
+
+    <script src="ej1.js"></script>
 </body>
 </html>

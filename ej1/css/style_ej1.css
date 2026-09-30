@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: #ffd700; /* fondo amarillo */
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    min-height: 100vh;
+}
+
+/* cont central */
+.contenedor-principal {
+    background-color: #ffffff;
+    border: 4px solid #000000;
+    box-shadow: 12px 12px 0px #000000; /* sombra sólida brutalista */
+    width: 90%;
+    max-width: 600px;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* encabezado */
+.encabezado-brutal {
+    background-color: #ff1493; 
+    color: #ffffff;
+    border: 4px solid #000000;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase; /*  texto en mayúsculas */
+}
+
+.encabezado-brutal h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+/* instrucciones */
+.instruccion {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+/* input y botones */
+.grupo-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+
+input[type="number"] {
+    flex: 1;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 3px solid #000000;
+    background-color: #e0ffff; 
+    outline: none;
+}
+
+/* estado de foco para el input */
+input[type="number"]:focus {
+    background-color: #ffffff;
+    box-shadow: 4px 4px 0px #ff1493;
+}
+
+.btn-brutal {
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 900;
+    border: 3px solid #000000;
+    cursor: pointer;
+    box-shadow: 6px 6px 0px #000000;
+    transition: all 0.1s ease;
+    text-transform: uppercase;
+}
+
+/* colores de los botones */
+.color-primario {
+    background-color: #00ff00; 
+}
+
+.color-secundario {
+    background-color: #00ffff; 
+    width: 100%;
+    margin-top: 1rem;
+}
+
+/* estado activo: click sobre botón */
+.btn-brutal:active {
+    box-shadow: 0px 0px 0px #000000;
+    transform: translate(6px, 6px);
+}
+
+/* el cuadro que avisa si es mayor o menor */
+.feedback {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem;
+    border: 3px dashed #000;
+    margin-bottom: 2rem;
+}
+
+.oculto {
+    display: none;
+}
+
+/* grilla de estadísticas */
+.estadisticas {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+
+.caja-stat {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 1rem;
+    font-size: 1rem;
+    border: 2px solid #000000;
+}
+
+.caja-stat strong {
+    font-size: 1.5rem;
+    color: #ffd700;
+}
