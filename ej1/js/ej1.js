@@ -48,7 +48,7 @@ function comprobarNumero() {
 
     // comparación
     if (intento < numeroSecreto) {
-        mensajeFeedback.innerHTML = "¡Muy <strong>FLOJITO!</strong> Sigue intentando.";
+        mensajeFeedback.innerHTML = "¡Estas <strong>VOLANDO BAJITO!</strong> Sigue intentando.";
         mensajeFeedback.style.backgroundColor = "#e0ffff";
     } else if (intento > numeroSecreto) {
         mensajeFeedback.innerHTML = "¡Muy <strong>CEBADO!</strong> Baja un cambio.";
@@ -60,7 +60,7 @@ function comprobarNumero() {
 }
 
 function victoria() {
-    mensajeFeedback.innerHTML = "ENHORABUENA! Adivinastes el número secreto.";
+    mensajeFeedback.innerHTML = "ENHORABUENA! Adivinaste el número secreto.";
     mensajeFeedback.style.backgroundColor = "#00ff00"; 
     document.body.style.backgroundColor = "#00ffff"; 
     
